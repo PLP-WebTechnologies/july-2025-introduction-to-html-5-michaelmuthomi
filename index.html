@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Awesome Website - A Guide to Something Great</title>
+    <meta name="description" content="This is an SEO-friendly description of my awesome website. We provide an accessible and semantically structured guide to something great.">
+    <meta name="keywords" content="awesome, website, guide, something, great, HTML5, SEO, accessibility">
+    <meta name="author" content="Your Name">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:title" content="My Awesome Website">
+    <meta property="og:description" content="A guide to something great.">
+    <meta property="og:image" content="https://example.com/images/og-image.jpg">
+    <meta property="og:url" content="https://example.com/index.html">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav aria-label="Main navigation">
+            <a href="#main-content" class="skip-link">Skip to main content</a>
+            <a href="/" class="logo">My Awesome Website</a>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <article>
+            <section id="hero">
+                <h1 role="heading" aria-level="1">Welcome to My Awesome Website</h1>
+                <p>Discover something great with our comprehensive guide.</p>
+                <a href="#services" class="cta-button">Learn More</a>
+            </section>
+
+            <section id="about">
+                <h2>About Us</h2>
+                <p>We are dedicated to providing clear, accessible, and high-quality information. Our mission is to make great things understandable for everyone. </p>
+                <figure>
+                    <img src="images/about-image.jpg" alt="A team of people working together happily." loading="lazy">
+                    <figcaption>Our passionate team is ready to help you succeed.</figcaption>
+                </figure>
+            </section>
+
+            <section id="services">
+                <h2>Our Services</h2>
+                <p>We offer a range of services designed to help you on your journey. Each service is tailored to meet your unique needs.</p>
+                <div class="service-list">
+                    <div class="service-item">
+                        <h3>Service One</h3>
+                        <p>Detailed explanations and tutorials.</p>
+                    </div>
+                    <div class="service-item">
+                        <h3>Service Two</h3>
+                        <p>Personalized one-on-one consultations.</p>
+                    </div>
+                    <div class="service-item">
+                        <h3>Service Three</h3>
+                        <p>Community forums for support.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact">
+                <h2>Contact Us</h2>
+                <form action="/submit-form" method="post" aria-labelledby="contact-heading">
+                    <h3 id="contact-heading">Get in Touch</h3>
+                    <p>Fill out the form below to send us a message.</p>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required aria-required="true">
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required aria-required="true">
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required aria-required="true"></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; <time datetime="2025">2025</time> My Awesome Website. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" aria-label="Follow us on Twitter">Twitter</a>
+                <a href="#" aria-label="Follow us on Facebook">Facebook</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
